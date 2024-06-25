@@ -1,0 +1,25 @@
+# .air.toml
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go build -o ./tmp/main ."
+  bin = "tmp/main"
+  full_bin = "${PWD}/tmp/main"
+  include = [
+    ".go",
+    ".html",
+  ]
+  exclude = []
+
+[log]
+  time_format = "2006-01-02 15:04:05"
+
+[color]
+  main = "magenta"
+  watcher = "cyan"
+  build = "yellow"
+  runner = "green"
+
+[misc]
+  clean_on_exit = true
