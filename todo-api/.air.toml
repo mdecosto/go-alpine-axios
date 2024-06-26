@@ -8,7 +8,6 @@ tmp_dir = "tmp"
   full_bin = "${PWD}/tmp/main"
   include = [
     ".go",
-    ".html",
   ]
   exclude = []
 
